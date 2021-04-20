@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "61be1615-b3ef-4e84-8fa8-71ea3a261bb5",
+		"name": "NEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CITYS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/citys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"citys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CITYS/City",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/citys/city/:name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"citys",
+						"city",
+						":name"
+					],
+					"variable": [
+						{
+							"key": "name",
+							"value": "Americana"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CITYS/State",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/citys/state/:name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"citys",
+						"state",
+						":name"
+					],
+					"variable": [
+						{
+							"key": "name",
+							"value": "SP"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSUMERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/consumers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"consumers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSUMERS/Consumer/fullname",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/consumers/consumer/:fullName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"consumers",
+						"consumer",
+						":fullName"
+					],
+					"variable": [
+						{
+							"key": "fullName",
+							"value": "Alison Jader"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSUMERS/Consumer/:id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/consumers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"consumers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSUMERS/Consumer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"Nome 2\",\r\n    \"gender\": \"MALE\",\r\n    \"birthdate\": \"10/02/1988\",\r\n    \"age\": 17,\r\n    \"city\": 21\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/consumers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"consumers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSUMERS/Consumer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"Nome editado\",\r\n    \"gender\": \"FEMALE\",\r\n    \"birthdate\": \"10/02/1988\",\r\n    \"age\": 17,\r\n    \"city\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/consumers/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"consumers",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSUMERS/Consumer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/consumers/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"consumers",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -6,14 +6,17 @@ Conhecendo você melhor, poderemos selecionar quais desafios já podemos passar 
 Requisitos da entrega
 Nesta estapa esperamos que você construa o código que contemple as seguintes operações expostas como endpoints REST para:
 
+Rota -> http://localhost:3000/citys
 Cadastrar cidade
+Consultar cidade pelo nome => http://localhost:3000/citys/name/:name
+Consultar cidade pelo estado => http://localhost:3000/citys/state/:state
+
 Cadastrar cliente
-Consultar cidade pelo nome
-Consultar cidade pelo estado
 Consultar cliente pelo nome
 Consultar cliente pelo Id
 Remover cliente
 Alterar o nome do cliente
+
 Considere o cadastro com dados básicos:
 
 Cidades: nome e estado
@@ -35,3 +38,10 @@ Requisitos Obrigatórios:
 Operações acima funcionando sem erros
 Código válido, estruturado e organizado para que possamos testar sua aplicação
 Utilização de Node 10+ o resto é por sua conta escolher.
+
+
+START => 
+npm run start:dev
+
+Utilizar postman para realizar os teste
+Diretório POSTMAN
