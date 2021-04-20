@@ -41,8 +41,12 @@ Código válido, estruturado e organizado para que possamos testar sua aplicaç�
 Utilização de Node 10+ o resto é por sua conta escolher.
 
 
-START => 
-npm run start:dev
 
-Utilizar postman para realizar os teste
-Diretório POSTMAN
+||******************************************************||
+||    START => 
+||    npm run start:dev
+||
+||    Utilizar postman para realizar os teste =>
+||    Diretório POSTMAN
+||
+||******************************************************||
