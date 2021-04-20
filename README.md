@@ -6,16 +6,17 @@ Conhecendo você melhor, poderemos selecionar quais desafios já podemos passar 
 Requisitos da entrega
 Nesta estapa esperamos que você construa o código que contemple as seguintes operações expostas como endpoints REST para:
 
-Rota -> http://localhost:3000/citys
+http://localhost:3000/citys
 Cadastrar cidade
-Consultar cidade pelo nome => http://localhost:3000/citys/name/:name
-Consultar cidade pelo estado => http://localhost:3000/citys/state/:state
+Consultar cidade pelo nome => http://localhost:3000/citys/city/:name
+Consultar cidade pelo estado => http://localhost:3000/citys/state/:name
 
-Cadastrar cliente
-Consultar cliente pelo nome
-Consultar cliente pelo Id
-Remover cliente
-Alterar o nome do cliente
+http://localhost:3000/consumers
+Cadastrar cliente => POST => http://localhost:3000/consumers
+Consultar cliente pelo nome => http://localhost:3000/consumers/consumer/:fullName
+Consultar cliente pelo Id => http://localhost:3000/consumers/:id
+Remover cliente DELETE=> http://localhost:3000/consumers
+Alterar o nome do cliente PUT => http://localhost:3000/consumers
 
 Considere o cadastro com dados básicos:
 
